@@ -1,0 +1,8 @@
+$tamaniosDeFuente: (16, 20, 24, 28);
+
+@each $tamanio in $tamaniosDeFuente {
+    .tamanio-fuente-#{$tamanio}{
+        font-size: #{$tamanio}px;
+        line-height: #{$tamanio + 2}px;
+    }
+}

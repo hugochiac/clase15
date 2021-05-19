@@ -1,0 +1,46 @@
+@import "recursos/if";
+@import "recursos/bucle";
+@import "recursos/each";
+@import "recursos/maps";
+
+$ancho: 720px;
+$colorfondo1: rgb(121, 121, 173);
+$colorletra1: white;
+$colorfondo2: beige;
+
+/* A continuación podremos elegir entre tres instrumentos: piano, violín y saxo.
+Los colores de un contenedor cambiarán en función a la elección mediante el uso de if */
+
+*{
+    font-family: sans-serif;
+}
+
+.contenedor{
+    display: flex;
+
+    .contenedor__caja1{
+        width: $ancho / 2; /*uso de operador división */
+        background-color: $colorfondo1;
+        color: $colorletra1;
+        padding: 10px;
+        margin: $ancho - 680; /* uso de operador resta */
+
+        .contenedor__caja1--titulo{
+            text: {
+                transform: uppercase;
+                align: center;
+            }
+        }
+    }
+    
+    .contenedor__caja2{
+        @extend .contenedor__caja1; /*uso de extend*/
+        color:black;
+        background-color: $colorfondo2;
+        .contenedor__caja2--titulo{
+            @extend .contenedor__caja1--titulo;
+            font-style: italic;
+        }
+    }
+
+}

@@ -1,0 +1,7 @@
+.caja__conBucle{
+    @for $i from 1 through 4{
+        .tamanioFuente-#{$i} {
+            font-size: $i * 12px;
+        }
+    }   
+}

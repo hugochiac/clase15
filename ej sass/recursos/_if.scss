@@ -1,0 +1,17 @@
+$instrumento: piano;
+
+.caja__instrumento{
+    @if $instrumento == piano{
+        background-color: black;
+        color: white;
+    }@else if $instrumento == violin{
+        background-color: brown;
+        color: black
+    }@else if $instrumento == saxo{
+        background-image: linear-gradient(gold, yellow, white);
+        color: darkred;
+    }@else{
+        background-color: green;
+        color: red;
+    }
+}

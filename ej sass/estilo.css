@@ -1,0 +1,104 @@
+@charset "UTF-8";
+.caja__instrumento {
+  background-color: black;
+  color: white;
+}
+
+.caja__conBucle .tamanioFuente-1 {
+  font-size: 12px;
+}
+
+.caja__conBucle .tamanioFuente-2 {
+  font-size: 24px;
+}
+
+.caja__conBucle .tamanioFuente-3 {
+  font-size: 36px;
+}
+
+.caja__conBucle .tamanioFuente-4 {
+  font-size: 48px;
+}
+
+.tamanio-fuente-16 {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.tamanio-fuente-20 {
+  font-size: 20px;
+  line-height: 22px;
+}
+
+.tamanio-fuente-24 {
+  font-size: 24px;
+  line-height: 26px;
+}
+
+.tamanio-fuente-28 {
+  font-size: 28px;
+  line-height: 30px;
+}
+
+/* bucle para el mapa */
+.fondoBloque-manzVerde {
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  color: blanchedalmond;
+  background-color: green;
+}
+
+.fondoBloque-manzRoja {
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  color: blanchedalmond;
+  background-color: red;
+}
+
+.fondoBloque-uva {
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  color: blanchedalmond;
+  background-color: darkViolet;
+}
+
+/* A continuación podremos elegir entre tres instrumentos: piano, violín y saxo.
+Los colores de un contenedor cambiarán en función a la elección mediante el uso de if */
+* {
+  font-family: sans-serif;
+}
+
+.contenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contenedor .contenedor__caja1, .contenedor .contenedor__caja2 {
+  width: 360px;
+  /*uso de operador división */
+  background-color: #7979ad;
+  color: white;
+  padding: 10px;
+  margin: 40px;
+  /* uso de operador resta */
+}
+
+.contenedor .contenedor__caja1 .contenedor__caja1--titulo, .contenedor .contenedor__caja2 .contenedor__caja1--titulo, .contenedor .contenedor__caja2 .contenedor__caja2--titulo {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.contenedor .contenedor__caja2 {
+  /*uso de extend*/
+  color: black;
+  background-color: beige;
+}
+
+.contenedor .contenedor__caja2 .contenedor__caja2--titulo {
+  font-style: italic;
+}
+/*# sourceMappingURL=estilo.css.map */

@@ -1,0 +1,17 @@
+$frutas: (
+    manzVerde: green,
+    manzRoja:  red,
+    uva: darkViolet,
+); 
+
+/* bucle para el mapa */
+@each $fruta, $color in $frutas{
+    .fondoBloque-#{$fruta} {
+        text-align: center;
+        padding: 10px;
+        margin: 10px;
+        color:blanchedalmond;
+        background-color: $color;
+
+    }
+}
